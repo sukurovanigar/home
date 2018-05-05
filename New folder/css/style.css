@@ -1,0 +1,18 @@
+.container{
+    width: 970px;
+    background-color: #ece6e6;
+    margin: 0px auto;
+}
+.head{
+    display: inline-block;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+
+}
