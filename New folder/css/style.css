@@ -1,6 +1,9 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.clear{
+    clear: both;
+}
 /* grids */
 *[class^="col-"] {
     float: left;
@@ -88,9 +91,28 @@ nav ul li:hover{
 .active{
     color: blue;
 }
-section #content div{
+#content{
+    height: 100%;
+    margin: 0px auto;
+}
+ #content div {
+    border: 1px solid blue;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px;
+}
+#content  #margin{
+    margin-right: 30px;
+}
+.read.col-6 section{
+    margin: 0px auto;
+    text-align: center;
+    width: 300px;
+    justify-content: center;
     display: inline-block;
-
+    border: 1px solid black;
 }
 .bottom {
     text-align: center;
