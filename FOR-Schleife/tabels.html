@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <input type="text"><input type="text"><input type="text">
+<table id="table">
+    <tr>
+        <th>
+            i
+        </th>
+        <th>i^2</th>
+        <th>i³</th>
+        <th>wurzel(i)</th>
+
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1.00</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>4</td>
+        <td>8</td>
+        <td>1.457500</td>
+    </tr>
+    <script>
+        var von=1;
+        var bis =100;
+        var step=1;
+        var Numbers = [0];
+    for (var i = von; i <= bis;i=i+step) {
+        Numbers[Numbers.length] = i;
+        document.createElement("<tr><td>"+i+"</td><td>"+i*i+"</td><td>"+i*i*i+"</td><td>"+Math.sqrt(i)+"</td></tr>");
+    }
+    </script>
+</table>
+</body>
+</html>
